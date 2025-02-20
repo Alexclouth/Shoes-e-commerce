@@ -171,7 +171,7 @@ const SingleProduct = () => {
         <img
           src={product.imageUrl}
           alt={product.name}
-          className="w-full md:w-1/2 h-auto rounded object-cover"
+          className="w-full md:w-1/2 h-auto rounded object-fill"
         />
 
         <div className="flex flex-col space-y-4">
@@ -181,7 +181,7 @@ const SingleProduct = () => {
             </h1>
           </div>
 
-          <p className="text-gray-700 font-serif pb-10 px-20">{product.description}</p>
+          <p className="text-gray-900 py-5 rounded-lg bg-gray-300 font-serif pb-10 px-20">{product.description}</p>
           <p className="text-4xl font-extrabold text-green-400">Price: ${product.price.toFixed(2)}</p>
           <p className="text-gray-600">Brand: {product.brand}</p>
           <p className="text-gray-600">Category: {product.category}</p>
@@ -209,7 +209,7 @@ const SingleProduct = () => {
       </div>
 
       {/* Review Section */}
-      <div className="mt-10">
+      <div className="mt-10 mx-10 mr-40">
         <h2 className="text-xl font-bold mb-4">Reviews</h2>
 
         {/* Add a Review */}
@@ -254,7 +254,7 @@ const SingleProduct = () => {
 
         {/* Display Reviews */}
         {reviews.length > 0 ? (
-          <div className="mt-6 space-y-4 w-4/6 p-2">
+          <div className="mt-6 space-y-4 w-4/6 p-10">
             {reviews.map((review) => (
               <div key={review.id} className="p-4 bg-slate-200 rounded-lg shadow-md">
                 {/* Header: User info and Date */}

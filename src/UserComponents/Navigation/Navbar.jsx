@@ -136,7 +136,7 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faBookmark} /> <span className="px-1">Saved</span>
           </a>
           <button
-            onClick={currentUser ? handleLogout : handleUserClick}
+            onClick={handleUserClick}
             className="block w-full text-left py-2 rounded-md hover:bg-gray-700"
           >
             <FontAwesomeIcon icon={currentUser ? faSignOutAlt : faUser} />{" "}
