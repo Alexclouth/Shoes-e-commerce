@@ -15,26 +15,20 @@ const Home = () => {
 
       {/* Gradient Overlay */}
       <div className="absolute inset-0 pointer-events-none">
-        <div
-          className="absolute top-0 left-0 w-full h-1/6 bg-gradient-to-b from-gray-900 to-transparent"
-          style={{ zIndex: 1 }}
-        ></div>
-        <div
-          className="absolute bottom-0 left-0 w-full h-1/6 bg-gradient-to-t from-gray-700 to-transparent"
-          style={{ zIndex: 1 }}
-        ></div>
+        <div className="absolute top-0 left-0 w-full h-1/6 bg-gradient-to-b from-gray-900 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-full h-1/6 bg-gradient-to-t from-gray-700 to-transparent"></div>
       </div>
 
       {/* Overlay and Text Content */}
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center px-4">
         <div className="text-center">
-          <h1 className="text-amber-500 text-8xl md:text-6xl font-bold mb-4">
-            Welcome to Golden Stride
+          <h1 className="text-amber-500 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4">
+            Welcome to Golden Strides
           </h1>
-          <p className="text-white text-lg md:text-2xl mb-6">
+          <p className="text-white text-sm sm:text-lg md:text-xl lg:text-2xl mb-6">
             Step into style, comfort, and excellence.
           </p>
-          <button className="px-6 py-3 bg-amber-500 text-black text-lg font-bold rounded-lg hover:bg-opacity-10 hover:text-white">
+          <button className="px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg bg-amber-500 text-black font-bold rounded-lg  hover:text-white cursor-default pointer-events-none">
             Shop Now
           </button>
         </div>

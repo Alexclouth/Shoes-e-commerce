@@ -13,7 +13,6 @@ const Product = ({ selectedBrand }) => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Extract search query from the URL
   const searchParams = new URLSearchParams(location.search);
   const searchQuery = searchParams.get("search") || "";
 
@@ -101,47 +100,56 @@ const Product = ({ selectedBrand }) => {
 
   return (
     <div className="min-h-screen bg-gray-100 py-6 px-4 lg:px-8">
-      <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">
+      <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
         Shoes Collection
       </h1>
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+
+      {/* Products Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (
             <div
               key={product.id}
-              className="block bg-white rounded-lg shadow hover:shadow-lg p-4 transition transform hover:scale-105 cursor-pointer"
+              className="bg-white rounded-lg shadow-md hover:shadow-lg p-4 transition transform hover:scale-105 cursor-pointer flex flex-col items-center"
               onClick={() => navigate(`/singleproduct/${product.id}`)}
             >
-              <div className="flex flex-col items-center">
-                <img
-                  src={product.imageUrl}
-                  alt={product.name}
-                  className="w-40 h-32 object-cover rounded-md"
-                />
-                <h2 className="text-lg font-semibold mt-3 text-gray-800 text-center">
-                  {product.name}
-                </h2>
-                <p className="text-gray-600 text-sm text-center mt-1">
-                  {product.description}
-                </p>
-                <p className="text-md font-bold text-gray-800 mt-3">
-                  ${product.price}
-                </p>
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleAddToCart(product);
-                  }}
-                  className="mt-3 bg-yellow-600 text-white px-4 py-1.5 rounded hover:bg-yellow-700 text-sm"
-                >
-                  Add to Cart
-                </button>
-              </div>
+              {/* Product Image */}
+              <img
+                src={product.imageUrl}
+                alt={product.name}
+                className="w-full h-40 object-cover rounded-md"
+              />
+
+              {/* Product Name */}
+              <h2 className="text-lg font-semibold mt-3 text-gray-800 text-center">
+                {product.name}
+              </h2>
+
+              {/* Product Description */}
+              <p className="text-gray-600 text-sm text-center mt-1 px-2 line-clamp-2">
+                {product.description}
+              </p>
+
+              {/* Product Price */}
+              <p className="text-lg font-bold text-gray-800 mt-2">
+                ${product.price}
+              </p>
+
+              {/* Add to Cart Button */}
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleAddToCart(product);
+                }}
+                className="mt-3 bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-700 transition w-full text-sm"
+              >
+                Add to Cart
+              </button>
             </div>
           ))
         ) : (
-          <div className="text-4xl font-bold text-yellow-500 col-span-4 text-center">
-            <p>No products available in this filter value.</p>
+          <div className="text-2xl font-bold text-yellow-500 col-span-full text-center">
+            <p>No products available in this filter.</p>
           </div>
         )}
       </div>
