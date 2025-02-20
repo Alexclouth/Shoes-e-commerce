@@ -70,7 +70,7 @@ const Navbar = () => {
           {/* Logo */}
           <a href="/" className="flex items-center space-x-2">
             <img
-              src="src/assets/download-removebg-preview.png"
+              src="https://res.cloudinary.com/dewutmxvk/image/upload/v1740079496/logo_l6boqg.png"
               alt="Logo"
               className="h-12 w-14 object-fill shadow-lg"
             />

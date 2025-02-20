@@ -4,52 +4,52 @@ const recommendations = [
   {
     id: 1,
     brand: "Nike",
-    image: "src/assets/recommended/download.png",
+    image: "https://res.cloudinary.com/dewutmxvk/image/upload/v1740079151/download_uhriuc.png",
   },
   {
     id: 2,
     brand: "Adidas",
-    image: "src/assets/recommended/download.jpg",
+    image: "https://res.cloudinary.com/dewutmxvk/image/upload/v1740079151/download_bxwcvw.jpg",
   },
   {
     id: 3,
     brand: "Puma",
-    image: "src/assets/recommended/download (1).png",
+    image: "https://res.cloudinary.com/dewutmxvk/image/upload/v1740079146/download_1_xelihb.png",
   },
   {
     id: 4,
     brand: "Jordan",
-    image: "src/assets/recommended/download (1).jpg",
+    image: "https://res.cloudinary.com/dewutmxvk/image/upload/v1740079146/download_1_jyjqno.jpg",
   },
   {
     id: 5,
     brand: "Converse",
-    image: "src/assets/recommended/download (2).png",
+    image: "https://res.cloudinary.com/dewutmxvk/image/upload/v1740079146/download_2_d0l4xp.png",
   },
   {
     id: 6,
     brand: "Under Armour",
-    image: "src/assets/recommended/download (4).png",
+    image: "https://res.cloudinary.com/dewutmxvk/image/upload/v1740079147/download_4_bxaewm.png",
   },
   {
     id: 7,
     brand: "New Balance",
-    image: "src/assets/recommended/download (6).png",
+    image: "https://res.cloudinary.com/dewutmxvk/image/upload/v1740079150/download_6_nf4guv.png",
   },
   {
     id: 8,
     brand: "Vans",
-    image: "src/assets/recommended/download (3).png",
+    image: "https://res.cloudinary.com/dewutmxvk/image/upload/v1740079147/download_3_frecxp.png",
   },
   {
     id: 9,
     brand: "Skechers",
-    image: "src/assets/recommended/download (5).png",
+    image: "https://res.cloudinary.com/dewutmxvk/image/upload/v1740079150/download_5_v8jnbf.png",
   },
   {
     id: 10,
     brand: "Reebok",
-    image: "src/assets/recommended/download (7).png",
+    image: "https://res.cloudinary.com/dewutmxvk/image/upload/v1740079150/download_7_gz54ad.png",
   },
 ];
 

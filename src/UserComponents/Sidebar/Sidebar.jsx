@@ -12,7 +12,7 @@ const Sidebar = () => {
     <>
       {/* Toggle Button for Small Screens */}
       <button
-        className="md:hidden fixed top-4 left-4 z-10 bg-amber-500 text-black p-2 rounded-lg shadow-lg"
+        className="md:hidden mx-4 my-20 top-20 left-4  bg-amber-500 text-black font-extrabold p-2 py-10 rounded-lg shadow-lg"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? "✖ Close" : "☰ Filters"}
